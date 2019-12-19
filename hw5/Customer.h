@@ -6,3 +6,4 @@ struct Customer
 	int numberOfCreditCard;
 };
 int printName();
+int printName(struct Customer a);

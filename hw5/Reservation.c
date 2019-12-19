@@ -8,7 +8,6 @@ typedef struct Reservation
 	int numberOfCustomers;
 	int berkfastForCustomers;
 	struct room* rooms;
-	int endDate[3];
 	struct Reservation* next;
 };
 

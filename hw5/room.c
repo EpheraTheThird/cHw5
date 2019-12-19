@@ -1,3 +1,4 @@
+#include<stdio.h>
 typedef struct room
 {
 	int isOcupied;
@@ -5,19 +6,11 @@ typedef struct room
 	int brekfastGuests;
 };
 
-/*int isOcupied() {
-	return isOcupied;
-}
-
-/*int getCustomers() {
-	if (isOcupied==1) {
-		return guests;
+int printDeatails(struct room r) {
+	if (r.isOcupied == 1) {
+		printf("the room is ocupied, by %d guests and %d going to breakfast", r.guests, r.brekfastGuests);
+	}
+	else {
+		printf("the room is unocupied");
 	}
 }
-
-int getBrekfast() {
-	if (isOcupied==1) {
-		return brekfastHuests;
-	}
-}
-*/

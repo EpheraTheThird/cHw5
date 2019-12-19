@@ -8,7 +8,7 @@ typedef struct Hotel
 	struct Reservation * ReservationList;
 	struct Customer CustomersList[16];
 };
-
+int showHotelStatus(struct Hotel h);
 int printCustomers();
 int printCustomers(struct Hotel h);
 int checkRooms(struct Hotel h);

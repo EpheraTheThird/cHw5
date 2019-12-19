@@ -5,14 +5,22 @@
 typedef struct Hotel
 {
 	struct room rooms[4][4];
-	struct Reservation * ReservationList;
+	struct Reservation* ReservationList;
 	struct Customer CustomersList[16];
 	int noOfReservasion
 };
 
+int showHotelStatus(struct Hotel h) {
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			printDetails(h.rooms[x][y]);
+		}
+	}
+}
+
 int printCustomers(struct Hotel h) {
 	for (int x = 0; x < 16; x++) {
-		h.CustomersList[x].printName();
+		printName(h.CustomersList[x]);
 	}
 }
 

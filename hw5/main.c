@@ -20,17 +20,17 @@ int addCustomer(char* name, int creditCardNumber) {
 	return 1;
 }
 int checkIn() {
-	California.printCustomers();
+	printCustomers(California);
 	char* name;
-	printf("what is your name?")
-	scanf_s("%s", name);
+	printf("what is your name?");
+	scanf_s("%s", *name);
 	printf("how many guest you will be?");
 	int noGuests,noBrekfast;
 	scanf_s("%s", noGuests);
 	printf("how many will eat breakfast?");
 	scanf_s("%d", noBrekfast);
-	if (California.checkRooms() =! 0) {
-		California.addReservation(California.checkRooms);
+	if (checkRooms(California) =! 0) {
+		addReservation(California,checkRooms(California),date,name,noGuests,noBrekfast);
 	}
 	else {
 		printf("corantly there are no rooms available");

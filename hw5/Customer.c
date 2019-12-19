@@ -5,6 +5,6 @@ typedef struct Customer
 	int numberOfCreditCard;
 };
  
-int printName() {
-	printf("%s", name);
+int printName(struct Customer a) {
+	printf("%s", *(a.name));
 }
